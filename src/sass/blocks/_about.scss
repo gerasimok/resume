@@ -1,5 +1,5 @@
 
-.about { //второй экран
+.about { //второй экранЫ
     padding-top: 120px;
     &__wrapper {
         display: grid;
@@ -40,7 +40,7 @@
         }
         &-circle {
             position: relative;
-            padding: 15px 0 0 15px;
+            padding: 15px 0 0 18px;
             @include before_circle;
             &:before {
                 top: 0;

@@ -13,6 +13,7 @@
         .work__item {
             border: 1px solid #000000;
             padding-left: 30px;
+            padding-right: 30px;
             position: relative;
             &-icon {
                 position: absolute;
@@ -42,7 +43,7 @@
             display: grid;
             grid-template: minmax(21px, auto) 14px / 200px 35px;
             justify-content: space-between;
-            align-items: space-between;
+            align-content: space-between;
         }
         &-title {
             position: relative;

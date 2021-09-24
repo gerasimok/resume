@@ -54,7 +54,7 @@ $('.contacts__close, .contacts__overlay').on('click', function() {
 
 
 
-function checkParams() {
+/* function checkParams() {
     var name = $('#name').val();
     var email = $('#email').val();
     var textarea = $('#text').val();
@@ -64,4 +64,4 @@ function checkParams() {
     } else {
         $('#submit').attr('disabled', 'disabled');
     }
-}
+} */

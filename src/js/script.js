@@ -26,3 +26,15 @@ $(document).ready(function(){
 		return false;
 	});
 
+function checkParams() {
+    var name = $('#name').val();
+    var email = $('#email').val();
+    var textarea = $('#text').val();
+     
+    if(name.length >= 2 && email.length >= 5 && textarea.length >= 7) {
+        $('#submit').removeAttr('disabled');
+    } else {
+        $('#submit').attr('disabled', 'disabled');
+    }
+}
+

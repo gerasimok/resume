@@ -1,5 +1,5 @@
 .contacts {
-    position: relative;
+
     padding: 120px 0 90px 0;
     &__wrapper {
         padding: 0 35px 0 52px;
@@ -29,7 +29,7 @@
 
     &__text, &__social {
         margin-top: 20px;
-        
+
     }
 
     &__link {
@@ -104,42 +104,4 @@
         font-size: 14px;
         background: $main-color;
     }
-
-    &__overlay {
-        display: none;
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-color: rgba($color: #000000, $alpha: .56);
-        &-text {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: #000000;
-            height: 125px;
-            width: 300px;
-            background-color: rgb(255, 255, 248);
-            padding-top: 24px;
-            font-size: 18px;
-            
-        }
-        
-    }
-    &__close {
-        position: absolute;
-        top: -10px;
-        color: red;
-        right: -25px;
-        font-size: 40px;
-        line-height: 40px;
-        cursor: pointer;
-    }
-    #close {
-       // display: none;
-    }
-    
 }

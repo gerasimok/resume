@@ -10,21 +10,6 @@ hamburger.addEventListener('click', () => {
 		menu.classList.add('active');
 	});
 
-closeElem.addEventListener('click', () => {
-		menu.classList.remove('active');
-	});
-menuOverlay.addEventListener('click', () => {
-	menu.classList.remove('active');
-});
-
-
-const 	counters  = document.querySelectorAll('.skills__ratings-counter'),
-	  	lines = document.querySelectorAll('.skills__ratings-line span');
-counters.forEach( (item, i) => {
-	lines[i].style.width = item.innerHTML;
-});
-
-
 $(document).ready(function(){
 	$('form').submit(function(e)  {
 		e.preventDefault();
@@ -40,21 +25,8 @@ $(document).ready(function(){
 		});
 		return false;
 	});
-});
 
-$('[ data-modal="submit"]').on('click', function() {
-	$('#close').fadeIn('slow');
-})
-$('.contacts__close, .contacts__overlay').on('click', function() {
-	$('#close').fadeOut('slow');
-})
-
-
-
-
-
-
-/* function checkParams() {
+function checkParams() {
     var name = $('#name').val();
     var email = $('#email').val();
     var textarea = $('#text').val();
@@ -64,4 +36,5 @@ $('.contacts__close, .contacts__overlay').on('click', function() {
     } else {
         $('#submit').attr('disabled', 'disabled');
     }
-} */
+}
+
